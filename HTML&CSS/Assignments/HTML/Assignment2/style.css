@@ -1,0 +1,291 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Raleway, sans-serif;
+}
+
+/* Section 1 header */
+
+header {
+    padding: 16px 78px;
+    background-color: #fff;
+    height: 80px;
+    border-bottom: 1px solid #c5c5c5;
+}
+
+.name {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.logo {
+    display: inline-block;
+}
+
+.logo h1 {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    color: #0084ff;
+    font-weight: 900;
+    font-size: 2.3em;
+}
+
+.logo h5 {
+    margin-top: 0px;
+    text-align: left;
+    font-family: Raleway, sans-serif;
+    font-size: 1em;
+    font-weight: 500;
+    font-style: italic;
+    color: #000;
+    margin-bottom: 0px;
+}
+
+.menu {
+    display: inline-block;
+    width: 45%;
+    cursor: pointer;
+    margin-left: 40px;
+    margin-top: -50px;
+}
+
+.exp {
+    margin-bottom: 5px;
+}
+
+.ml {
+    margin-left: 5px;
+    margin-top: 2px;
+}
+
+.text {
+    width: 20%;
+    display: inline-block;
+    margin: auto;
+    font-family: Open Sans, sans-serif;
+    font-size: 16px;
+    color: #c5c5c5;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.button {
+    display: inline-block;
+}
+
+.button1 {
+    width: auto;
+    font-size: 0.75em;
+    padding: 0.5em 2em;
+    margin: 0px 16px 0px 40px;
+    box-shadow: none;
+    min-width: 136px;
+    height: 42px;
+    border-radius: 35px;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-family: Raleway, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: 0.03em;
+    background: linear-gradient(269deg, #0048ff, #0096ff);
+}
+
+/* Section 1 header */
+
+/* Section 2 container */
+
+main {
+    width: 70%;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.heading1 h1 {
+    font-family: Raleway, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 36px;
+    line-height: 70px;
+    color: #000;
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+.images {
+    margin: 0 auto;
+}
+
+.mainImg {
+    display: inline-block;
+}
+
+.mainImg img,
+.subImg img {
+    border-radius: 5px;
+}
+
+.subImg {
+    display: inline-block;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.heading2 h2 {
+    font-family: Raleway, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 30px;
+    color: #000;
+    margin-top: 30px;
+}
+
+.filter {
+    margin-bottom: 13px;
+}
+
+.filterText {
+    font-weight: 600;
+    font-style: normal;
+    font-size: 14px;
+    color: #000;
+    margin-left: 8px;
+    display: inline-block;
+}
+
+.category {
+    padding: 6px 14px;
+    width: auto;
+    color: #0084ff;
+    border-radius: 15px;
+    border: 1px solid #0084ff;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.active {
+    color: #fff;
+    background-color: #0084ff;
+}
+
+.buttons {
+    margin-bottom: 20px;
+}
+
+/* Cards Section */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 0 0 calc(32% - 20px);
+    height: 380px;
+    border: 1px solid rgba(0, 168, 255, 0.3);
+    border-radius: 5px;
+    margin-right: 5px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+}
+
+.img {
+    height: 176px;
+    width: 100%;
+}
+
+.img img {
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+/* Crad text CSS */
+
+.textSection {
+    padding: 10px 24px;
+}
+
+.textSection div {
+    font-family: Raleway, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    line-height: 23px;
+    text-align: left;
+    margin: 0px;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 0px;
+    height: 45.6px;
+    text-transform: capitalize;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+}
+
+a {
+    text-decoration: none;
+}
+
+.textSection h3 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.author {
+    font-family: Raleway, sans-serif;
+    color: #0096ff;
+    font-size: 14px;
+    line-height: 29px;
+    font-style: Italic;
+    font-weight: 500;
+    margin-bottom: 0px;
+}
+
+.date {
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: 300;
+    padding-top: 4px;
+}
+
+.desc {
+    font-size: 14px;
+    line-height: 20px;
+    font-style: normal;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.6);
+    letter-spacing: 0.35px;
+    opacity: 0.5;
+    font-stretch: normal;
+    line-height: 1.43;
+    letter-spacing: 0.35px;
+    text-align: left;
+    color: #000;
+    margin: 0.3em 0;
+    height: 98px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+}
+
+p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+/* Crad text CSS */
+
+/* Footer CSS */
+.footer {
+    background-color: #172146;
+    padding: 80px 16%;
+}

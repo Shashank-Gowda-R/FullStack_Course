@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML FORMS</title>
+    <style>
+        form{
+            border: 1px solid rgb(0, 242, 255);
+            width: 300px;
+            margin: 0 auto;
+            margin-top: 120px;
+        }
+        .form label{
+            display: block;
+            margin: 10px;
+            color:darkred;
+            font-style: italic;
+            font-size: 20px;
+            font-weight: 600;
+        }
+        .form input{
+            display: block;
+            margin: 10px;
+            padding: 10px;
+            font-size: 20px;
+            color:navy;
+            font-family: 'Times New Roman', Times, serif;
+            border: 1px solid rgb(0, 225, 255);
+        }
+        /* opposite o focus is blur*/
+        input:focus{ /*It will activate When user starts entering value */
+            border-radius: 20px;
+        }
+        .form .btn{
+            margin: 0 auto;
+            color: black;
+            border: 1px solid #ffff00;
+            border-radius: 20px;
+            text-transform: uppercase;
+            background-color: #ffff00;
+            margin-bottom: 20px;
+        }
+        input[type="submit"]{
+            margin-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" method="post" class="form" >
+        <label for="user">Name</label>
+        <input type="text" name="user" id="user" placeholder="Eter your name" >
+        <label for="pass">Password</label>
+        <input type="password" name="pass" id="pass" placeholder="Enter your password" >
+        <input class="btn" type="submit" value="Submit">
+    </form>
+    <form action="" method="post"   >
+        <label for="dob">DOB</label>
+        <input type="date" name="dob" id="dob" placeholder="Enter your Date of Birth">
+        <br>
+        <label for="time">Time:</label>
+        <input type="time" name="time" id="time">
+        <br>
+        <label for="month">Month:</label>
+        <input type="month" name="month" id="month">
+        <br>
+        <label for="sub">Select The language</label>
+        <select name="sub" id="sub">
+            <option value="html" >HTML</option>
+            <option value="css">CSS</option>
+            <option value="js" selected>JS</option>
+        </select>
+        <br>
+        <label for="tech">Select The tech stack</label>
+        <select name="tech" id="tech">
+            <optgroup label="FrontEnd">
+                <option value="html" >HTML</option>
+                <option value="css">CSS</option>
+                <option value="js">JS</option>
+            </optgroup>
+            <optgroup label="BackEnd">
+                <option value="php" >PHP</option>
+                <option value="node">Node JS</option>
+                <option value="sql">SQL</option>
+            </optgroup>
+        </select>
+        <br>
+        <label for="color">Color Picker:</label>
+        <input type="color" name="color" id="color">
+        <br>
+        <br>
+        <label for="msg">Message</label>
+        <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+        <br><br>
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age" min="8"  max="60">
+        <br><br>
+        <progress max="100" value="70">70%</progress>
+        <br><br>
+        <label for="dt">Date Time Local:</label>
+        <input type="datetime-local" name="dt" id="dt">
+        <br><br>
+        <input type="image" height="100" src="Images/Monkey.jpg" alt="submit">
+        <input type="submit" value="Submit">
+    </form>
+    
+</body>
+
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food App</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        .head ul {
+            background-color: #ccffff;
+            list-style-type: none;
+            display: flex;
+            font-size: 18px;
+        }
+
+        li {
+            margin: 15px 10px;
+        }
+
+        .nav {
+            display: inline;
+            text-decoration: none;
+            padding: 10px 30px;
+        }
+
+        .nav:hover {
+            background-color: #66ffff;
+            border-radius: 30px;
+        }
+
+        .main {
+            background-color: #000;
+            padding-left: 20px;
+            padding-top: 20px;
+        }
+
+        h2 {
+            color: #00eeff;
+        }
+
+        .fav {
+            text-decoration: none;
+            color: #009975;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .image {
+            display: flex;
+            margin: 0 auto;
+            width: 500px;
+            height: 500px;
+        }
+
+        .labels {
+            margin-top: 10px;
+            text-align: center;
+            font-size: 20px;
+            font-weight: 800;
+            color: rgb(255, 0, 0);
+        }
+
+        .pic {
+            margin-top: 8%;
+        }
+
+        .top {
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="head">
+        <ul id="top">
+            <li><a href="#" class="nav">Index</a></li>
+            <li><a href="#" class="nav">Food</a></li>
+            <li><a href="#" class="nav">About</a></li>
+        </ul>
+    </div>
+    <div class="main">
+        <div class="lists">
+            <h2>Top 5 favourite foods</h2>
+            <ul>
+                <li><a class="fav" href="#biryani">Biryani</a></li>
+                <li><a class="fav" href="#barbeque">Barbeque</a></li>
+                <li><a class="fav" href="#pizza">Pizza</a></li>
+                <li><a class="fav" href="#shawarma">Shawarma Roll </a></li>
+                <li><a class="fav" href="#paneer">Paneer Tikka </a></li>
+            </ul>
+        </div>
+        <div class="description">
+            <div class="pic" id="biryani"><img
+                    src="image/biryani.png" class="image"
+                    alt="Biryani">
+                <p class="labels">Biryani</p>
+            </div>
+            <div class="pic" id="barbeque"><img
+                    src="image/Barbeque.png" class="image"
+                    alt="Barbeque">
+                <p class="labels">Barbeque</p>
+            </div>
+            <div class="pic" id="pizza"><img src="image/Pizza.png"
+                    class="image" alt="Pizza">
+                <p class="labels">Pizza</p>
+            </div>
+            <div class="pic" id="shawarma"><img src="image/rolls.png"
+                    class="image" alt="Shawarma Roll" />
+                <p class="labels">Shawarma Roll </p>
+            </div>
+            <div class="pic" id="paneer"><img
+                    src="image/paneer.webp"
+                    class="image" alt="Paneer Tikka" />
+                <p class="labels">Paneer Tikka</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

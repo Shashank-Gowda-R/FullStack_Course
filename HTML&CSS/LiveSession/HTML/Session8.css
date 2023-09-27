@@ -1,0 +1,44 @@
+p {
+    color: green;
+    background-color: pink;
+}
+
+h1 {
+    color: red;
+}
+
+#deom1 {
+    color: greenyellow;
+}
+
+#deom2 {
+    color: green;
+}
+
+#deom3 {
+    color: blueviolet;
+}
+
+#deom4 {
+    color: blue;
+}
+
+#deom5 {
+    color: red;
+}
+
+.common {
+    border: 2px solid blue;
+    background-color: yellow;
+}
+
+.odd {
+    color: red;
+}
+
+.even {
+    color: blue;
+}
+.eo{
+    color: brown;
+}

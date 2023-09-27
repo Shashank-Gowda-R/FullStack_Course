@@ -1,0 +1,212 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 3000px;
+}
+
+.mainBox {
+    height: 500px;
+    width: 500px;
+    background-color: hotpink;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.childBox {
+    height: 150px;
+    width: 150px;
+    background-color: pink;
+    position: absolute;
+    /* by default the body will be the parent of the absolute */
+    /* absolute will work anywhere in the page, we have to create the boundary as a parent the parent will be relative*/
+    right: -30px;
+    bottom: -30px;
+}
+
+.mainImg {
+    width: 600px;
+    height: 600px;
+    position: relative;
+}
+
+.mainImg img {
+    width: 600px;
+    height: 600px;
+}
+
+.childImg {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    right: -30px;
+    bottom: -30px;
+}
+
+.childImg img {
+    width: 250px;
+    height: 250px;
+}
+
+/* Navbar */
+header {
+    background-color: #9e9eff;
+    border-bottom: 1px solid lightgray;
+    font-family: 'Poppins', sans-serif;
+    position: sticky;
+    /* position: fixed;
+    width: 100%; */
+    top: 0px;
+    z-index: 2;
+}
+
+.logo {
+    display: inline-block;
+    width: 20%;
+    margin-left: 50px;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.menuIcon {
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+}
+
+.menuIcon ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.icons {
+    display: inline-block;
+    width: 25%;
+}
+
+.icons i {
+    font-size: 20px;
+    padding: 20px;
+}
+
+/* /fixed takes only required amount of sapce we have to anually write the width , fixed harms teh width and 
+sticky doesn't harms 
+Sticky doesn't harms the next data, Fixed harms the next data.
+if we use fixed we hvae to add width and margin-top and we have to give z-index
+when we add multiple postion we have to given z-index
+default z-index value will be 0
+*/
+
+.demoClass {
+    background-color: pink;
+    padding: 20px;
+    border: 1px solid red;
+    font-size: 24px;
+}
+
+/* .mt{
+    margin-top: 100px;
+} */
+
+.abc {
+    background-color: lightgreen;
+    border: 2px solid green;
+    width: 10%;
+    height: 500px;
+    font-size: 30px;
+    padding: 20px;
+    margin: 30px;
+    position: absolute;
+}
+
+.pqr {
+    background-color: salmon;
+    border: 2px solid brown;
+    width: 90%;
+    height: 100px;
+    margin: 20px;
+    padding: 30px;
+    position: absolute;
+}
+
+.abs1 {
+    top: 30px;
+}
+
+.abs3 {
+    right: 30px;
+}
+
+.abs2 {
+    top: 100px;
+    left: 10px;
+    z-index: 2;
+}
+
+.abs4 {
+    top: 350px;
+    left: 10px;
+}
+
+/* selectors */
+p {
+    background-color: #9e9eff;
+    color: gray;
+}
+
+.desSel p {
+    background-color: aliceblue;
+    color: #9e9eff;
+}
+
+/* Child Selector > */
+.childSel>h1 {
+    color: red;
+    background-color: lightgoldenrodyellow;
+}
+
+/* Descendent Selector : Selects the immediate sibling*/
+.btn+button,
+i {
+    /*It selects immediate i and button tags*/
+    border: 2px solid blue;
+    background-color: lightblue;
+    padding: 5px;
+}
+
+/* General Sibling Selctor */
+.genSib~button {
+    border: 2px solid green;
+    background-color: lightgreen;
+    padding: 5px;
+}
+
+/* Overflow */
+
+.overflow,
+.noOverflow {
+    border: 4px solid blue;
+    padding: 20px;
+    margin: 20px;
+    font-size: 20px;
+}
+
+.overflow img {
+    height: 400px;
+    width: 400px;
+    float: right;
+}
+
+.noOverflow img{
+    height: 400px;
+    width: 400px;
+    float: right;
+}
+
+.noOverflow{
+    margin-top: 540px;
+    overflow: hidden;
+}

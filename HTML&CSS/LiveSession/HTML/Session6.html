@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session6</title>
+    <style>
+        /* table,
+        th,
+        td {
+            border: 1px solid red;
+            border-collapse: collapse;
+        }
+        th,td{
+            padding:5px;
+        } */
+        #table{
+            width:100%;
+            border: 2px solid rgb(0, 242, 255);
+            border-collapse: collapse;
+            text-align: center;
+        }
+        #table th,td{
+            border:2px solid rgb(0, 242, 255);
+            height: 40px;
+        }
+        th{
+            background-color: lightgray;
+            color:blue;
+        }
+        td{
+            background-color: lightslategrey;
+        }
+        /* This is for vertical alignment of the data in the cell */
+        /* for horizontal alignment we use text-align property */
+        /* th{
+            vertical-align:top;
+        } */
+
+        #table tr:nth-child(even){
+            color:red;
+        }
+        #table tr:nth-child(odd){
+            color: #ffff00;
+        }
+        #table tr:hover{
+            /* color:rgb(92, 47, 255); */
+            background-color: rgb(92, 47, 255);
+        }
+        #table tr:nth-child(even):hover{
+            color:#ffff00;
+        }
+        #table tr:nth-child(odd):hover{
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- We have two wys to crate a table -->
+    <h1>Creating table</h1>
+    <h3>Method 1 Verticle table</h3>
+    <table id="table" >
+        <thead>
+            <th>Sl No</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th colspan="2">Contact</th>
+            <th colspan="3">Subject</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Shashank</td>
+                <td>shashank@gmail.com</td>
+                <td>6361296303</td>
+                <td></td>
+                <td>HTML</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Tom</td>
+                <td>tom@gmail.com</td>
+                <td>9987654321</td>
+                <td>6361296303</td>
+                <td>Node JS</td>
+                <td>PHP</td>
+                <td>JS</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Alex</td>
+                <td>alex@gmail.com</td>
+                <td>9912345678</td>
+                <td></td>
+                <td>CSS</td>
+                <td>Python</td>
+                <td>SQL</td>
+            </tr>
+        </tbody>
+    </table>
+<br><br>
+    <!-- Second way  -->
+    <!-- <h3>Method 2 horizontal table</h3>
+    <table>
+        <tr>
+            <th>Sl No</th>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <th>Name</th>
+            <td>Shashank</td>
+            <td>Tom</td>
+            <td>Alex</td>
+        </tr>
+        <tr>
+            <th>Email</th>
+            <td>shashank@gmail.com</td>
+            <td>tom@gmail.com</td>
+            <td>alex@gmail.com</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Contact</th>
+            <td>6361296303</td>
+            <td>9987654321</td>
+            <td>9912345678</td>
+           
+        </tr>
+        <tr>
+            <td></td>
+            <td>6361296303</td>
+            <td></td>
+        </tr>
+        <tr>
+            <th rowspan="3">Subject</th>
+            <td>HTML</td>
+            <td>Node JS</td>
+            <td>CSS</td>
+        </tr>
+        <tr>
+            <td>C++</td>
+            <td>PHP</td>
+            <td>Python</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>JS</td>
+            <td>SQL</td>
+        </tr>
+    </table> -->
+</body>
+
+</html>

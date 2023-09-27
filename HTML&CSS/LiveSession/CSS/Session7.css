@@ -1,0 +1,148 @@
+.transform {
+    width: 200px;
+    height: 200px;
+    margin: 250px auto;
+    border: 2px solid navy;
+    background-color: lightblue;
+    transition: transform 3s;
+    transform-origin: top right;
+}
+
+.transform:hover {
+    transform: rotate(360deg);
+}
+
+/* ul {
+    display: flex;
+}
+
+li {
+    list-style-type: none;
+    padding: 10px;
+    position: relative;
+}
+
+ul li::after {
+    content: '';
+    width: 50px;
+    height: 20px;
+    background-color: salmon;
+    position: absolute;
+    left: 0px;
+    z-index: -1;
+    transform: scaleX(0);
+    transition: transform 3s;
+    transform-origin: left;
+}
+
+ul li:hover::after {
+    transform: scaleX(1);
+} */
+
+/* .nav {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav::after {
+    content: '';
+    height: 30px;
+    width: 2px;
+    z-index: -1;
+    margin-top: 20px;
+    background-color: red;
+    transform: scale(0);
+    transition: transform 2s;
+    transform-origin: bottom;
+    display: flex;
+}
+
+.nav::before{
+    content: '';
+    height: 30px;
+    width: 2px;
+    background-color: red;
+    margin-bottom: 20px;
+    transform: scale(0);
+    transition: transform 2s;
+    transform-origin: top;
+    display: flex;
+}
+
+.nav:hover::after{
+    transform: scale(1);
+}
+
+.nav:hover::before{
+    transform: scale(1);
+} */
+
+ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.desc1 {
+    color: darkgreen;
+    font-size: 30px;
+    padding: 16px;
+    line-height: 1.5em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.desc1::after {
+    content: '';
+    height: 30px;
+    width: 2px;
+    margin-top: 20px;
+    background-color: orange;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+}
+
+.desc1::before {
+    content: '';
+    height: 30px;
+    width: 2px;
+    margin-bottom: 20px;
+    background-color: orange;
+}
+
+.circle {
+    height: 150px;
+    width: 150px;
+    border: 1px solid orange;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: transform 0.4s cubic-bezier(0.39, 0.575, 0.565, 1.000);
+}
+
+.circle:hover {
+    transform: scale(1.2);
+}
+
+/* .scale-up-center:hover {
+    -webkit-animation: scale-up-center .4s cubic-bezier(.39, .575, .565, 1.000) forwards;
+    animation: scale-up-center .4s cubic-bezier(.39, .575, .565, 1.000) forwards
+} */
+
+.images{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.images div{
+    width: 45%;
+    height: 300px;
+    border: 1px solid red;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Video</title>
+</head>
+
+<body>
+    <!-- We don't use this way bcoz browser doesn't support it -->
+    <!-- <video src="av/file_example_MP4_1280_10MG.mp4" controls ></video> -->
+    <video controls>
+        <source src="av/file_example_MP4_1280_10MG.mp4" type="video/mp4">
+        <source src="av/file_example_OGG_1280_11_4mg.ogg" type="video/ogg">
+        <source src="av/file_example_WEBM_1920_3_7MB.webm" type="video/webm">
+    </video>
+    <audio controls>
+        <source src="av/file_example_MP3_5MG.mp3" type="audio/mp3">
+        <source src="av/file_example_OOG_5MG.ogg" type="audio/ogg">
+        <source src="av/file_example_WAV_5MG.wav" type="audio/wav">
+    </audio>
+    <div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/X2KXu_lYjdI?si=Wxhz8sjHYp_9rhrj"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+        </iframe>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Section 1 Header */
+header {
+    border-bottom: 1px solid lightgray;
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo {
+    display: inline-block;
+    width: 20%;
+    margin-left: 50px;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.menuIcon {
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+}
+
+.menuIcon ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.icons {
+    display: inline-block;
+    width: 25%;
+}
+
+.icons i {
+    font-size: 20px;
+    padding: 20px;
+}
+
+/* Section 1 Header */
+
+/* Section 2 heading */
+.heading {
+    text-align: center;
+}
+
+.heading h2 {
+    font-size: 50px;
+    font-family: 'Passions Conflict', cursive;
+    color: yellowgreen;
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+.heading h4 {
+    margin-top: 5px;
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 10px;
+}
+
+/* Section 2 heading */
+
+/* Section 3 Products */
+
+main {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.productBox {
+    display: inline-block;
+    border: 1px solid lightgrey;
+    margin: 15px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.productBox img {
+    width: 300px;
+    height: 300px;
+}
+
+.productBox h4 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.productBox h5 {
+    color: green;
+}
+
+/* Section 3 Products */
+
+footer {
+    border: 1px solid lightgray;
+}
+footer p{
+    text-align: center;
+}

@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    z-index: 3;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.363);
+    font-family: 'Raleway', sans-serif;
+}
+
+.logo a {
+    color: black;
+    font-weight: 900;
+    text-decoration: none;
+    font-size: 35px;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu ul li {
+    list-style-type: none;
+    padding: 20px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 23px;
+}
+
+.button {
+    padding: 12px 35px;
+    background-color: #1977cc;
+    color: #fff;
+    border-radius: 45px;
+    border: none;
+    font-size: 15px;
+}
+
+/* Section 2 Welcome to Medilab */
+
+main {
+    position: relative;
+}
+
+.imgBox {
+    background-image: url('images/bg.jpg');
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    padding: 60px;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+.textBox h1 {
+    font-size: 50px;
+    color: #2d4964;
+    margin-bottom: 0px;
+}
+
+.textBox h2 {
+    color: #2d4964;
+    line-height: 2.5;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.flexBox {
+    position: absolute;
+    bottom: -300px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    left: 0px;
+    margin-top: 20px;
+}
+
+.blueBox {
+    background-color: #1977cc;
+    color: white;
+    padding: 40px;
+    box-sizing: border-box;
+    width: 450px;
+}
+
+.blueBox h3 {
+    font-size: 40px;
+}
+
+.blueBox p {
+    font-size: 17px;
+}
+
+.blueBox button{
+    padding: 12px 35px;
+    background-color: #fff;
+    color: #1977cc;
+    border-radius: 45px;
+    border: none;
+    font-size: 15px;
+}
+
+.whiteBox {
+    background-color: white;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.363);
+    width: 220px;
+    height: 220px;
+    padding: 40px 30px;
+    text-align: center;
+}
+
+.whiteBox h4{
+    font-size: 24px;
+}
