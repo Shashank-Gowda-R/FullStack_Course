@@ -63,17 +63,21 @@ console.log("Q2 END =====================")
 
 // Question 3:
 // Write a JavaScript program to create menu driven calculator that performs basic arithmetic operations (add, subtract, multiply and divide) using switch case. The calculator should input two numbers and an operator: +, -, *, / from the user. It should perform operation according to the operator entered and must take input in given format.
+
 function calculate(num1, num2, op) {
     switch (op) {
         case "+":
-            return num1 + num2;
+            console.log("Result of " + num1 + " " + op + " " + num2 + " is " + (num1 + num2));
+            break;
         case "-":
-            return num1 - num2;
+            console.log("Result of " + num1 + " " + op + " " + num2 + " is " + (num1 - num2));
+            break;
         case "*":
-            return num1 * num2;
+            console.log("Result of " + num1 + " " + op + " " + num2 + " is " + (num1 * num2));
+            break;
         case "/":
-            if (num2 !== 0)
-                return num1 + num2;
+            if (num2 !== 0) 
+                console.log("Result of " + num1 + " " + op + " " + num2 + " is " + (num1 / num2));
             else
                 console.log("Invalid Division");
             break;
@@ -81,13 +85,11 @@ function calculate(num1, num2, op) {
             console.log("Invalid Opertaor");
     }
 }
-
 var num1 = parseInt(prompt("Enter first Number"));
 var op = prompt("Enter operator(+,-,*,/):");
 var num2 = parseInt(prompt("Enter second Number"));
 
-var res = calculate(num1,num2,op);
-console.log("Result of "+num1+" "+op+" "+num2+" is "+res);
+calculate(num1,num2,op);
 
 console.log("Q3 END =====================")
 
@@ -102,7 +104,10 @@ console.log("Q3 END =====================")
 var a = parseFloat(prompt("Enter the value of side of triangle:"));
 var b = parseFloat(prompt("Enter the value of side of triangle:"));
 var c = parseFloat(prompt("Enter the value of side of triangle:"));
-if (a === b === c) {
+if( a <=0 || b <= 0 || c<=0 ){
+    console.log("The Triangle sides must be positive and It can't be zero");
+}
+else if (a === b && b === c) {
     console.log("The Triangle is Equilateral Triangle");
 }
 else if (a === b || b === c || a === c) {
@@ -133,7 +138,7 @@ console.log("Q4 END =====================")
 var unit = parseInt(prompt("Enter electricity units consumed:"));
 var amt = 0;
 if (unit <= 50) {
-    amt = unit * 0.50;
+    amt = unit * 0.5;
 }
 else if (unit <= 150) {
     amt = 50 * 0.50 + (unit - 50) * 0.75;
@@ -143,10 +148,10 @@ else if (unit <= 250) {
 }
 else {
     amt = 50 * 0.50 + 100 * 0.75 + 100 * 1.2 + (unit - 250) * 1.5;
+    amt += amt * 0.2;
 }
 
-var totalAmt = amt + amt * 0.2;
 console.log("Total Units: " + unit);
-console.log("Result = INR " + totalAmt);
+console.log("Result = INR " + amt);
 
 console.log("Q5 END =====================")
