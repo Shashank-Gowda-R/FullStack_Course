@@ -124,7 +124,7 @@ console.log("Q4 END =====================")
 // Input: Hello
 // Output: olleH
 
-str = String(prompt("Enter the string to reverse it:"));
+var str = String(prompt("Enter the string to reverse it:"));
 var rev = "";
 var len = str.length;
 for (var i = (len - 1); i >= 0; i--) {

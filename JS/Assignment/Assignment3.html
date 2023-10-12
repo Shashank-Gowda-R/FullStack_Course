@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 3</title>
+    <style>
+        .product {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+            display: inline-block;
+        }
+
+        img {
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="clothing">
+        <h2>Clothing for Men and Women</h2>
+    </section>
+    <section id="accessory">
+        <h2>Accessories for Men and Women</h2>
+    </section>
+
+    <script src="Assignment3.js"></script>
+    <script>
+        for (var i = 0; i < productList.length; i++) {
+            var product = productList[i];
+            var productHTML = `
+        <div class="product">
+           <img src="${product.preview}" alt="${product.name}">
+          <p>${product.name}</p>
+          <p>${product.brand}</p>
+          <p>Rs ${product.price}</p>
+        </div>
+      `;
+
+            if (product.isAccessory) {
+                document.getElementById('accessory').innerHTML += productHTML;
+            } else {
+                document.getElementById('clothing').innerHTML += productHTML;
+            }
+        }
+    </script>
+</body>
+
+</html>
