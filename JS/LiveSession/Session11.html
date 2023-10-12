@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Events</title>
+    <style>
+        .xyz {
+            height: 200px;
+            width: 200px;
+            border: 1px solid red;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="xyz" onclick="alert(123)"></div>
+    <br>
+    <div class="xyz" onmouseover="func1();" onmouseout="func2()" id="demo1"></div>
+    <br>
+    <div class="xyz" onmouseover="func3();" onmouseout="func4()" id="demo2"></div>
+    <br>
+    <div class="xyz" onmouseup="func5();" id="demo3"></div>
+    <br>
+    <div class="xyz" onmousedown="func6()" id="demo4"></div>
+    <br>
+    <input type="text" name="" oninput="func7();" id="demo5">
+    <button id="btn1">Submit</button>
+    <p>My Name is: <span id="demo6"></span></p>
+
+    <input type="text" name="" onfocus="func8()" onblur="func9()" id="demo7">
+    <button id="btn2">Submit</button>
+
+    <input type="text" name="" id="demo8" onkeyup="func10()">
+
+    <input type="text" name="" id="demo9" onkeydown="func11()">
+
+    <ul id="list1">
+
+    </ul>
+    <button onclick="func12()">ADD</button>
+
+    <div id="dyn"></div>
+
+    <script src="Sesson11.js" type="text/javascript"></script>
+</body>
+
+</html>

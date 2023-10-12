@@ -5,36 +5,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .para {
+            color: red;
+        }
+
+        .heading {
+            color: aquamarine;
+            display: inline;
+            padding: 5px;
+            width: 75px;
+        }
+    </style>
 </head>
 
 <body>
 
-    <button id="btn-login">Login</button>
+    <p id="hello">
+        Hello
+    </p>
 
-    <script>
+    <h2>Hello 1</h2>
+    <h2>Hello 2</h2>
+    <h2>Hello 3</h2>
+    <h2>Hello 4</h2>
+    <h2>Hello 5</h2>
 
-        var btn = document.getElementById('btn-login');
+    <form method="get">
+        <input type="number" name="" id="num1" placeholder="Enter first Number">
+        <input type="number" name="" id="num2" placeholder="Enter second Number">
+    </form>
+    <button onclick="add()">ADD</button>
+    <b id="result">Result: </b>
 
-        btn.onclick = function () {
-
-            console.log('First click');
-        }
-        btn.onclick = function () {
-            console.log('second click');
-
-        }
-
-        btn.addEventListener('click', function () {
-
-            console.log('Third click');
-        })
-
-        btn.addEventListener('click', function () {
-            console.log('Fourth click');
-
-        })
-
-    </script>
+    <script src="practise.js"></script>
 </body>
 
 </html>
