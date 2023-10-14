@@ -221,3 +221,52 @@ var productList = [
     }
 ];
 
+// console.log(productList.length);
+
+for (var i = 0; i < productList.length; i++) {
+    // console.log(productList[i]);
+    var divTag = document.createElement('div');
+    divTag.className = "boxStyle";
+    var detailsTag = document.createElement('div');
+    detailsTag.className = 'details';
+    // console.log(divTag)
+    for (var j in productList[i]) {
+        if (j == 'preview') {
+            var imgTag = document.createElement('img');
+            imgTag.src = productList[i][j];
+        }
+    }
+    divTag.appendChild(imgTag);
+    for (var j in productList[i]) {
+        if (j == 'name') {
+            var pName = document.createElement('h3');
+            pName.innerHTML = productList[i][j];
+            detailsTag.appendChild(pName);
+        }
+        if (j == 'brand') {
+            var pBrand = document.createElement('h4');
+            pBrand.innerHTML = productList[i][j];
+            detailsTag.appendChild(pBrand);
+        }
+        if (j == 'price') {
+            var pPrice = document.createElement('h5');
+            pPrice.innerHTML = "Rs " + productList[i][j];
+            detailsTag.appendChild(pPrice);
+            // console.log(divTag);
+        }
+    }
+    // console.log(detailsTag)
+    divTag.appendChild(detailsTag);
+    console.log(i + 1)
+    console.log(divTag)
+    for (var j in productList[i]) {
+        if (j == 'isAccessory') {
+            if (!productList[i][j]) {
+                document.getElementById('clothingCards').appendChild(divTag)
+            }
+            if (productList[i][j]) {
+                document.getElementById('accessoryCards').appendChild(divTag)
+            }
+        }
+    }
+}

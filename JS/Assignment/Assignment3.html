@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment 3</title>
+    <title>SHOPLANE - A Place for Shopping</title>
+    <link rel="stylesheet" href="Assignment3.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <style>
         .product {
             border: 1px solid #ccc;
@@ -22,32 +24,19 @@
 
 <body>
     <section id="clothing">
-        <h2>Clothing for Men and Women</h2>
+        <div class="heading">Clothing for Men and Women</div>
+        <section id="clothingCards" class="cardContainer">
+
+        </section>
     </section>
     <section id="accessory">
-        <h2>Accessories for Men and Women</h2>
+        <div class="heading">Accessories for Men and Women</div>
+        <section id="accessoryCards" class="cardContainer">
+
+        </section>
     </section>
 
-    <script src="Assignment3.js"></script>
-    <script>
-        for (var i = 0; i < productList.length; i++) {
-            var product = productList[i];
-            var productHTML = `
-        <div class="product">
-           <img src="${product.preview}" alt="${product.name}">
-          <p>${product.name}</p>
-          <p>${product.brand}</p>
-          <p>Rs ${product.price}</p>
-        </div>
-      `;
-
-            if (product.isAccessory) {
-                document.getElementById('accessory').innerHTML += productHTML;
-            } else {
-                document.getElementById('clothing').innerHTML += productHTML;
-            }
-        }
-    </script>
+    <script src="Assignment3.js" type="text/javascript"></script>
 </body>
 
 </html>
