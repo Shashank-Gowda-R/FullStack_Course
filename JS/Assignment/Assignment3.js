@@ -257,8 +257,8 @@ for (var i = 0; i < productList.length; i++) {
     }
     // console.log(detailsTag)
     divTag.appendChild(detailsTag);
-    console.log(i + 1)
-    console.log(divTag)
+    console.log(i + 1);
+    console.log(divTag);
     for (var j in productList[i]) {
         if (j == 'isAccessory') {
             if (!productList[i][j]) {
