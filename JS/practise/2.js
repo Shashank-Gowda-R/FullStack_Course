@@ -1,9 +1,11 @@
 var users = () => {
     document.getElementById('loader').style.display = 'block';
     var a = new XMLHttpRequest();
-    a.open('GET', 'https://fakestoreapi.com/users', true);
+    a.open('GET', 'https://fakestoreapi.com/uses', true);
     a.send();
     a.onreadystatechange = () => {
+        console.log(a.status);
+        console.log(a.readyState)
         if (a.status == 200 && a.readyState == 4) {
             var userData = a.responseText;
             userData = JSON.parse(userData);

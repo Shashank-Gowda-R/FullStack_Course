@@ -1,6 +1,6 @@
 class Apple{
     constructor(){
-        console.log('Apple Logo')
+        console.log('APPLE LOGO')
     }
     config1(){
         console.log('512GB');
@@ -26,6 +26,8 @@ var iphone = new Apple();
 iphone.consfig2();
 iphone.productColor('silver');
 
+var ipad = new Apple();
+
 class human{
     constructor(){
         console.log("EAT SLEEP CODE REPEAT");
@@ -45,3 +47,21 @@ rutuja.swim('rutuja');
 var shashank = new human();
 
 
+class stdInfo{
+    constructor(name,email){
+        console.log('Student Name: '+name+' Student Email: '+email);
+    }
+    php(marks){
+        console.log('PHP test marks:'+marks);
+    }
+    js(marks){
+        console.log('JavaScript test marks:'+marks);
+    }
+}
+
+var jhon = new stdInfo('Jhon','jhon@mail.com');
+jhon.php(90);
+jhon.js(95);
+var shan = new stdInfo('Shashank','shashank@gmail.com');
+shan.php(80);
+shan.js(85);
