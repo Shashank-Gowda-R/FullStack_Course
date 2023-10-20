@@ -74,6 +74,7 @@ var stdInfoEdyoda = [
     }
 ]
 
+// Accesing students details
 class stdData {
     constructor(data) {
         this.value = data;
