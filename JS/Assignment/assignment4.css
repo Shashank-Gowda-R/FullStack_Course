@@ -35,6 +35,15 @@ body {
     font-weight: 200 !important;
 }
 
+.productDetails .brand {
+    font-size: 20px !important;
+    color: #1b1919;
+    font-weight: 200 !important;
+    font-style: normal;
+    margin-bottom: 0px;
+    letter-spacing: 1px;
+}
+
 .productDetails p {
     font-size: 16px;
     font-weight: 300;
